@@ -1,0 +1,67 @@
+.edit-profile-container {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    max-width: 60%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-profile-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.edit-profile-container img {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.edit-profile-container h2 {
+    padding-bottom: 1em;
+}
+
+.edit-profile-container form label {
+    font-weight: bold;
+}
+
+.edit-profile-container form input[type="text"],
+.edit-profile-container form input[type="password"],
+.edit-profile-container form input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline:none;
+}
+
+.edit-profile-container form input[type="file"] {
+    width: 100%;
+    outline:none;
+}
+
+.edit-profile-container form button {
+    padding: 10px 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #0B6E4F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-profile-container form #preview {
+    max-width: 100%;
+    max-height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+}

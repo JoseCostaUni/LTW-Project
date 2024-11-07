@@ -1,0 +1,604 @@
+.ItemCreation * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ItemCreation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #f9f9f9;
+    margin-top: 10em;
+    margin-bottom: 2em;
+}
+
+.publish {
+    font-size: 3em;
+    color: #0B6E4F;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 4.2em;
+    margin-top: 3.2em;
+    margin-bottom: 1em;
+    font-weight: 550;
+}
+
+/*--------------Item Name and Categories---------------------*/
+
+.Item-Title-And-Categories {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 2em;
+    background-color: #CBE896;
+    margin-top: 5em;
+    margin-bottom: 1em;
+    width: 80%;
+    padding-bottom: 10em;
+}
+
+.Item-Title {
+    color: #0B6E4F;
+    font-size: 2em;
+    flex-grow: 1;
+    width: 80%;
+}
+
+.images{
+    margin-right: 80%;
+    padding-bottom: 1em;
+    font-size: 2em;
+    color: #0B6E4F;
+    font-weight: 600;
+}
+
+.images_text{
+    padding-bottom: 1em ;
+    padding-right: 5%;
+    font-size: 1.5em;
+    color: #0B6E4F;
+    margin-bottom: 0;
+}
+
+.Category_choice{
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #0B6E4F;
+    font-weight: bolder;
+}
+
+.Sub_Category_choice{
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #0B6E4F;
+    font-weight: bolder;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    text-decoration: none;
+}
+
+.search_bar {
+    margin-left: 10%;
+    width: 80%;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    font-size: 25px;
+    padding-left: 10px;
+    border: none;
+
+}
+
+.search_category{
+    width: 80%;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    font-size: 1em;
+    padding-left: 10px;
+    border: none;
+}
+
+.sub_search_category{
+    width: 80%;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    font-size: 1em;
+    padding-left: 10px;
+    border: none;
+}
+
+.search_category option{
+    font-size: 25px;
+    padding-left: 10px;
+    border: none;
+
+}
+
+.suggestions{
+    display: none;
+    width: 81%;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+
+
+.sub_suggestions {
+    display: none;
+    width: 81%;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+
+.Item-Images {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    padding: 2em;
+    background-color: #CBE896;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    width: 80%;
+
+}
+
+.image_inputer{
+    margin: 1em;
+}
+
+.form{
+    display: block;
+    width: calc(25% - 10px);
+    padding: 0.5em 0.75em;
+    background-color: #0B6E4F;
+    color: white;
+    border-radius: 0.25em;
+    cursor: pointer;
+    margin: 0.3125em;
+    margin-bottom: 0.3125em;
+    text-align: center;
+    min-height: 5em;
+    margin-bottom: 3em;
+    align-items: center;
+}
+
+.image_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+
+}
+
+.image_icon img {
+    padding-top: 1em;
+    height: 2.5em;
+    width: 2.5em;
+    cursor: pointer;
+    color: white;
+    filter: invert(99%);
+}
+
+.image_icon img {
+    padding-top: 1em;
+    height: 2.5em;
+    width: 2.5em;
+    cursor: pointer;
+    color: white;
+    filter: invert(99%);
+}
+
+.new_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    color: white;
+}
+
+.close_icon{
+    color: white;
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.Item-Images input[type="file"] {
+    display: none;
+}
+
+.Item-Images label {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    padding: 0.5em 0.75em;
+    background-color: #0B6E4F;
+    color: white;
+    border-radius: 0.25em;
+    cursor: pointer;
+    margin: 0.3125em; 
+    text-align: center;
+    min-height: 5em;
+    margin-bottom: 3em;
+}
+
+
+.add_image_label {
+    display: block;
+    width: calc(25% - 10px);
+    background-color: #0B6E4F;
+    color: white;
+    cursor: pointer;
+
+    text-align: center;
+    min-height: 5em;
+    text-decoration: underline; 
+}
+
+.add_image_label:hover {
+    transform: scale(0.95); 
+}
+
+.add_image_label:hover {
+    transform: scale(0.95); 
+}
+
+.image_icon:hover {
+    transform: scale(0.95); 
+}
+
+.new_image:hover{
+    transform: scale(0.95); 
+}
+
+.title, .box_title, .words-details p {
+    font-size: 1.1em;
+}
+
+.box_title{
+    padding-bottom: 0.5em;
+}
+
+.words-details{
+    padding-top: 0.5em;
+}
+/* Make * in the title bold */
+.title span {
+    font-weight: bold;
+}
+
+.title{
+    color: #0B6E4F;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 1em;
+    padding-left: 0;
+}
+/* Organize letters in a single line */
+.words-details {
+    display: flex;
+
+    align-items: center;
+}
+
+/* JavaScript will update this class */
+.word-count {
+    margin-left: 51%;
+    color: red; /* Example styling */
+}
+
+
+/*------- Item Description -------------------------*/
+
+.Item-Description {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 2em;
+    background-color: #CBE896;
+    margin-top: 5em;
+    margin-bottom: 1em;
+    width: 80%;
+}
+
+.Item-Price-Trade {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 2em;
+    background-color: #CBE896;
+    margin-top: 5em;
+    margin-bottom: 1em;
+    width: 80%;
+}
+
+.Additional-Info {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 2em;
+    background-color: #CBE896;
+    margin-top: 5em;
+    margin-bottom: 1em;
+    width: 80%;
+}
+
+.Item-Description p span {
+    font-weight: bold;
+}
+
+.word-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.word-counter {
+    font-size: 1.1em;
+    color: red;
+}
+
+.min_words{
+
+    font-size: 1.1em;
+
+}
+
+.item-description{
+    font-size: 1.5em;
+    color: #0B6E4F;
+    font-weight: 600;
+    padding: 0.5em;
+    padding-left: 0;
+}
+
+.description-text{
+    font-size: 1em;
+    color: #0B6E4F;
+    font-weight: 600;
+    padding: 0.5em;
+    padding-left: 0;
+    padding-bottom: 5em;
+    margin-bottom: 0.5em;
+}
+
+
+/*------- Item Price and Trade -------------------------*/
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #0B6E4F;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #0B6E4F;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.Preço{
+    font-size: 1.5em;
+    color: #0B6E4F;
+    font-weight: 600;
+    padding: 0.5em;
+    padding-left: 0;
+    padding-bottom: 1em;
+}
+
+.Preço_{
+    font-size: 1.5em;
+    color: #0B6E4F;
+    font-weight: 600;
+    padding: 0.5em;
+    padding-left: 0;
+    margin-bottom: 1em;
+}
+
+.toggle-button-wrapper{
+    display: flex;
+
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.Negociável{
+    font-size: 1.5em;
+    color: #0B6E4F;
+    font-weight: 600;
+    padding: 0.5em;
+    padding-left: 0;
+    padding-right: 1em ;
+}
+
+/*-----------------Aditional Info-------------*/
+
+.hidden {
+    display: none;
+}
+
+.sizes,
+.conditions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.sizes li,
+.conditions li {
+    cursor: pointer;
+}
+
+.sizes li:hover,
+.conditions li:hover {
+    background-color: #f0f0f0;
+}
+
+.size , .condition{
+    font-size: 1.5em;
+    color: #0B6E4F;
+    font-weight: 600;
+    padding: 0.5em;
+    padding-left: 0;
+    padding-bottom: 1em;
+}
+
+#brand{
+    font-size: 1.5em;
+    color: #0B6E4F;
+    font-weight: 600;
+    padding: 0.5em;
+    padding-left: 0;
+    padding-bottom: 1em;
+}
+
+.size_list , .condition_list{
+    gap: 0.2em;
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    background-color: white;
+    color: #0B6E4F;
+    font-size: 1em;
+}
+
+.Tamanho , .Marca , .Estado{
+    font-size: 1em;
+    color: #0B6E4F;
+    font-weight: 600;
+    padding: 0.5em;
+    padding-left: 0;
+    padding-bottom: 1em;
+}
+
+/*-----------------Publicar-----------------*/
+
+.pre_visualizar_publicar_section{
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    padding: 2em;
+    background-color: #CBE896;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 45%;
+    width: 100%;
+}
+
+.pre_visualizar {
+    font-size: 1.5em;
+    color: #0B6E4F;
+    font-weight: 600;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 0;
+    padding-bottom: 0.1em;
+    margin-right: 3em;
+    margin-left: 1em;
+}
+
+.pre_visualizar:hover {
+    cursor: pointer;
+    transform: scale(0.95); 
+}
+
+.Publicar{
+    font-size: 1.5em;
+    color: #0B6E4F;
+    font-weight: 600;
+    padding: 0.5em;
+    background-color: white;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.headerNav{
+    margin: 1em;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .pre_visualizar_publicar_section{
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .Publicar{
+        margin-left: 13%;
+    }
+
+    
+}

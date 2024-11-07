@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    margin-top: 20px;
+}
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin: 8px 0;
+    margin-left: 1em;
+}
+.item {
+    display: flex;
+    align-items: center;
+    margin: 0 2em 0 2em;  
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 2em;
+    border: 1px solid #ddd;
+    border-radius: 2em;
+    transition: background-color 0.3s;
+}
+
+
+.item img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+
+.item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+.item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.item_details{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.order_details{
+    background-color: #f9f9f9;
+    margin: 0 2em 2em 2em;    
+    border: 1px solid #ddd;
+    border-radius: 2em;
+}
+
+.total_price{
+    display: flex;
+    justify-content: right;
+    margin: 0 2em 2em 2em;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 2em;
+}
+
+.total_price p{
+    margin-right: 1em;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.logo {
+    filter: brightness(0) saturate(100%) invert(34%) sepia(11%) saturate(4211%) hue-rotate(117deg) brightness(90%) contrast(91%);
+    padding-top: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        word-wrap: break-word;
+        white-space: normal;
+        overflow-wrap: break-word;
+    }
+}

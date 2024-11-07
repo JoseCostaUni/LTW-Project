@@ -1,0 +1,288 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Crimson Pro", serif;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.search_table{
+    background-color: #CBE896;
+    display: flex;
+    border-collapse: collapse;
+    justify-content: center;
+    border-spacing: 0;
+    padding: 3em 2em;
+}
+
+.search_button:active {
+    background-color: #91858E; /* Change background color when button is clicked */
+}
+
+.search_bar {
+    margin-left: 10%;
+    flex-grow: 3; 
+    width: 80%;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    border-collapse: collapse;
+    font-size: 25px;
+    padding-left: 10px;
+    border: none;
+    border-right: 0.5px solid #D3D3DE;
+}
+
+.category_dropdown {
+    border: none;
+    background-color: white;
+    border-right: 1px solid #D3D3D3;
+    flex-grow: 0; 
+    width: 50%;
+    border-collapse: collapse;
+    font-size: 25px;
+    padding-left: 10px;
+    font-weight: 0;
+}
+
+.search_button{
+    border: none;
+    color: white;
+    background-color: #A4969B;
+    margin-right: 15%;
+    padding: 0;
+    padding-right: 30px;
+    margin-left: 0;
+    width: 20%;
+    border-radius: 0;
+    font-size: 25px;
+    position: relative;
+}
+
+.search_icon {
+    width: 25px; /* Set the width of the image */
+    height: 25px; /* Set the height of the image */
+    position: absolute; /* Position the image absolutely */
+    top: 50%; /* Align the top of the image to the center of the button */
+    transform: translateY(-50%); /* Adjust the position to vertically center the image */
+    left: 70%; /* Adjust the left position of the image */
+    z-index: 1; /* Set the z-index to bring the image to the front */
+     /* Adjust the right position of the image */
+    margin-left: 10px
+}
+
+.Categorias_Principais{
+    padding: 1em;
+    font-family: "Crimson Pro", serif;
+    font-size: 2em;
+    font-weight: bolder;
+    color: #0B6E4F;
+    display: flex;
+    justify-content: center;
+    background-color: #ededed;
+}
+
+.Categories{
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+    background-color: #ededed;
+}
+
+.img{
+    width: 3%;
+    height: 3%;
+    object-fit: cover;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: black;
+}
+
+a{
+    cursor: pointer;
+}
+
+.image-container {
+    width: 200px; height: 200px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.image-container > img {
+    display: inline-block;
+    max-width: 70%; 
+    max-height: 70%;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #CBE896;
+    border-radius: 50%;
+}
+
+.image-container:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50px; left: 50px;
+    width: 150px; height: 150px;
+    border: 1px solid red;
+    background-color: black;
+    z-index: -10;
+}
+
+.Categories .image-container span {
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-family: "Crimson Pro", serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #0B6E4F;
+
+}
+
+.Buy_From_Brand{
+    padding: 1em;
+    font-family: "Crimson Pro", serif;
+    font-size: 2em;
+    font-weight: bolder;
+    color: #0B6E4F;
+    display: flex;
+    justify-content: center;
+    background-color: #ededed;
+}
+
+.brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #CBE896;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.brands button {
+    margin: 1%; 
+    width: 10%;
+    height: 10%;
+    font-size: 25px;
+    color:#0B6E4F;
+}
+
+.brands button:hover {
+    cursor: pointer;
+}
+
+.Feed{
+    padding: 1em;
+    font-family: "Crimson Pro", serif;
+    font-size: 2em;
+    font-weight: bolder;
+    color: #0B6E4F;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item {
+    width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5em;
+    margin-top: 2em;
+}
+
+.item img {
+    width: 100%;
+    height: auto    ;
+    border-radius: 8px;
+}
+
+.item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.item p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.item img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.wishilist_send{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    transition: transform 0.2s ease;
+  
+}
+.wishilist_send:hover{
+    transform: translateY(-3px); 
+}
+   
+.wishlist_button i {
+    color: #ff0000; 
+    font-size: 20px; 
+    
+}
+.Categories .image-container img, .Categories .image-container span{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .search_bar, .category_dropdown {
+        display: none;
+    }
+    
+    .search_button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .Categories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .Categories > a {
+        margin: 10px 0;
+    }
+    
+    .brands{
+        display: none;
+    }
+    
+    .Buy_From_Brand {
+        display: none;
+    }
+}
+

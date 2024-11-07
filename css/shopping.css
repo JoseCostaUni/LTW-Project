@@ -1,0 +1,158 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+#banner-conatainer {
+    text-align: center;
+}
+
+.cart_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.ShoppingCart-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.item {
+    flex: 0 0 30%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.item a {
+    display: block;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.item p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.Remove_cart,.checkout-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #0B6E4F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Remove_cart:hover,.checkout-button:hover {
+    background-color: #CBE896;
+}
+
+.checkout {
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkout span {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.checkout zone {
+    margin-top: 20px;
+}
+
+.item-count,.total-price,.shipping,.payment-method{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+
+.line{
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    margin-bottom: 2em;
+}
+
+.text-dropdown {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+.text-dropdown:hover {
+    background-color: #f0f0f0;
+}
+  
+.text-dropdown:focus {
+  outline: none;
+  border-color: #0B6E4F;
+  box-shadow: 0 0 0 2px #0B6E4F;
+}
+  
+
+@media screen and (max-width: 768px) {
+    .cart_body {
+        flex-direction: column;
+    }
+
+    .ShoppingCart-items {
+        width: 100%;
+    }
+
+    .checkout{
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    section.checkout-zone {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+
